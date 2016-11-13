@@ -5,21 +5,21 @@ import ddf.minim.signals.*;
 import ddf.minim.spi.*;
 import ddf.minim.ugens.*;
 
-AudioOutput out;
+AudioOutput out; //for the notes to be played 
 
 PImage Blackcat;
 PImage Whitecat;
-Piano p;
-
+Piano p; //class
 
 void setup()
 {
   size(500,500);
+  Whitecat = loadImage("catpiano.png");
 }
 
 void draw()
 {
-p.blackKeys();
+p.Keys();
 p.cats();
 
 }
