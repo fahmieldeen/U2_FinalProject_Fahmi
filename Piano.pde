@@ -1,20 +1,25 @@
 class Piano
 {
-  private boolean _isActive;
-  private PImage _img;
-  private float _x;
-  private float _y;
-  
-  Piano(float x, float y, PImage img, boolean isActive)
+
+  private PImage _Whitecat;
+  private PImage _Blackcat;
+
+  Piano(PImage Whitecat, PImage Blackcat)
   {
-    _isActive = isActive;
-    _img = img;
-    _x = x; 
-    _y = y; 
+    _Whitecat = Whitecat;
+    _Blackcat = Blackcat;
+
   }
   
 public void cats()
 {
+  image(_Whitecat, 100, 450);
+  image(_Whitecat, 500, 450);
+  image(_Whitecat, 1000, 450);
+  image(_Whitecat, 1300, 450);
+  image(_Blackcat, 270, 300);
+  image(_Blackcat, 750, 300);
+  image(_Blackcat, 1100, 300);
 }
 
 public void blackKeys()

@@ -7,6 +7,8 @@ import ddf.minim.ugens.*;
 
 AudioOutput out;
 
+PImage Blackcat;
+PImage Whitecat;
 Piano p;
 
 
